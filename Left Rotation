@@ -1,0 +1,8 @@
+n,r = map(int,input().split())
+s2=input()
+arr1=s2.split()
+res = [0]*n
+for i in range(n):
+    temp = (i+(n-r))%n
+    res[temp]=arr1[i]
+print(*res)
